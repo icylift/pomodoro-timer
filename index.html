@@ -12,6 +12,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
+  <!-- Icons-->
+  <script src="https://kit.fontawesome.com/926b7ec2b4.js" crossorigin="anonymous"></script>
+
+
+
+
 </head>
 <body>
   <section>
@@ -19,8 +25,8 @@
       <h1>Pomodoro</h1>
 
       <div class="work-breakDisplay">
-        <p>Work</p>
-        <p>Break</p>
+        <p id="work" class="active">Work</p>
+        <p id="break">Break</p>
       </div>
       <div class="timer">
         <div class="circle">
@@ -32,8 +38,8 @@
         </div>
       </div>
       <div class="controls">
-        <button id="start" onclick="start()"></button>
-        <a href="/" id="reset"></a>
+        <button id="start" onclick="start()"  ><i class="fa-solid fa-play"></i></button>
+        <a href="/" id="reset"><i class="fa-solid fa-arrow-rotate-left"></i></a>
       </div>
     </div>
   </section>
